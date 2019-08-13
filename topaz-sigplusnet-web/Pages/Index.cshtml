@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<script src="~/js/sigplusnet.js"></script>
+
+<div class="text-center">
+    <h1 class="display-4">Topaz Signature Pad LCD 1x5</h1>
+    <p>
+		<canvas id="displaySignature"></canvas>
+		<button id="sigStart">Start Capture</button>
+	</p>
+</div>
+
+<script>
+	document.getElementById('sigStart').addEventListener('click', () => {
+		// start capture
+		const sig = new sigPlusNet();
+
+		sig.setTabletState(1);
+	});
+</script>

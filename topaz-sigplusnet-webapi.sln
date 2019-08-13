@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topaz-sigplusnet-web", "topaz-sigplusnet-web\topaz-sigplusnet-web.csproj", "{2DEE40DB-159E-4E7B-9C92-1D30A73E57DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topaz-sigplusnet-webapi", "topaz-sigplusnet-webapi\topaz-sigplusnet-webapi.csproj", "{CAC149A3-CBD7-4B30-B5AC-3E518D4DDE77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BAD47EE-DC72-4C73-9041-0CC814908A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BAD47EE-DC72-4C73-9041-0CC814908A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BAD47EE-DC72-4C73-9041-0CC814908A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BAD47EE-DC72-4C73-9041-0CC814908A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DEE40DB-159E-4E7B-9C92-1D30A73E57DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DEE40DB-159E-4E7B-9C92-1D30A73E57DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DEE40DB-159E-4E7B-9C92-1D30A73E57DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DEE40DB-159E-4E7B-9C92-1D30A73E57DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAC149A3-CBD7-4B30-B5AC-3E518D4DDE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC149A3-CBD7-4B30-B5AC-3E518D4DDE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC149A3-CBD7-4B30-B5AC-3E518D4DDE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC149A3-CBD7-4B30-B5AC-3E518D4DDE77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F98A1EF-0A48-45B0-B008-BECFC84B0008}
+	EndGlobalSection
+EndGlobal
