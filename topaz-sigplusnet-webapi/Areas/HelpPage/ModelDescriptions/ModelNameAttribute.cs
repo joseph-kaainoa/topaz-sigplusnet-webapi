@@ -1,6 +1,6 @@
 using System;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage.ModelDescriptions
+namespace topaz_sigplusnet_webapi.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Use this attribute to change the name of the <see cref="ModelDescription"/> generated for a type.

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace topaz_sigplusnet_webapi_standard.Controllers
+namespace topaz_sigplusnet_webapi.Controllers
 {
 	public class HomeController : Controller
 	{

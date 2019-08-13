@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage
+namespace topaz_sigplusnet_webapi.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

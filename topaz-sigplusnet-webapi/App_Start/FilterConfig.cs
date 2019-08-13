@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace topaz_sigplusnet_webapi_standard
+namespace topaz_sigplusnet_webapi
 {
 	public class FilterConfig
 	{

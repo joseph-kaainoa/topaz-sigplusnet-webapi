@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage.ModelDescriptions
+namespace topaz_sigplusnet_webapi.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

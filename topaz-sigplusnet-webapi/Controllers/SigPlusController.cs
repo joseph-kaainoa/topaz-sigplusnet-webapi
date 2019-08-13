@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using Topaz;
 
-namespace topaz_sigplusnet_webapi_standard.Controllers
+namespace topaz_sigplusnet_webapi.Controllers
 {
-    public class SigPlusController : ApiController
+	[EnableCors(origins: "*", headers: "*", methods: "*", exposedHeaders: "", SupportsCredentials = true)]
+	[RoutePrefix("api/SigPlus")]
+	public class SigPlusController : ApiController
     {
         // GET: api/SigPlus
         public IEnumerable<string> Get()
@@ -17,11 +18,21 @@ namespace topaz_sigplusnet_webapi_standard.Controllers
         }
 
         // GET: api/SigPlus/5
-        public string Get(string propertyName)
+        public string Get(string name)
         {
 			SigPlusNET sig = new SigPlusNET("Web");
 			int result = sig.GetTabletState();
 			return result.ToString();
+		}
+
+		[HttpGet]
+		[Route("GetTabletState")]
+		public IHttpActionResult GetTabletState()
+		{
+			SigPlusNET sig = new SigPlusNET("Web");
+			int result = sig.GetTabletState();
+			//return Ok(result.ToString());
+			return Ok(result);
 		}
 
 		// POST: api/SigPlus

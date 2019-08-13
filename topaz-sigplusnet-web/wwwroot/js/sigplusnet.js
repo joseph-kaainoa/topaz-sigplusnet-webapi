@@ -1,52 +1,54 @@
 ﻿class sigPlusNet {
 	constructor() {
-		this._baseUrl = "http://localhost:5555/SigPlus/";
+		this._baseUrl = "https://localhost:44339/api/SigPlus/GetTabletState"; //?name=GetTabletState
 	}
 
-	postData(url = '', data = {}) {
-	// Default options are marked with *
-	return fetch(url, {
-		method: 'GET', // *GET, POST, PUT, DELETE, etc.
-		mode: 'no-cors', // no-cors, cors, *same-origin
-		cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-		credentials: 'same-origin', // include, *same-origin, omit
-		headers: {
-			'Content-Type': 'application/json',
-			// 'Content-Type': 'application/x-www-form-urlencoded',
-		},
-		redirect: 'follow', // manual, *follow, error
-		referrer: 'no-referrer', // no-referrer, *client
-		body: JSON.stringify(data), // body data type must match "Content-Type" header
-	})
-		.then(response => response.json()); // parses JSON response into native JavaScript objects 
-}
+	// In order to make this compatible with IE and older browsers, we will use XMLHTTPRequest
+	// so all the creation can be the same
 
-	sigWebGetProperty(prop) {
-		postData(this._baseUrl + prop, { answer: 42 })
-			.then(data => console.log(JSON.stringify(data))) // JSON-string from `response.json()` call
-			.catch(error => console.error(error));
+	// generic methods
+	createXHR() {
+		try { return new XMLHttpRequest(); } catch (e) { }
+		try { return new ActiveXObject("Msxml2.XMLHTTP.6.0"); } catch (e) { }
+		try { return new ActiveXObject("Msxml2.XMLHTTP.3.0"); } catch (e) { }
+		try { return new ActiveXObject("Msxml2.XMLHTTP"); } catch (e) { }
+		try { return new ActiveXObject("Microsoft.XMLHTTP"); } catch (e) { }
 
-		var xhr = SigWebcreateXHR();
+		console.log("XMLHttpRequest not supported");
+		return null;
+	}
 
+	postData(url, data, callback) {
+		const xhr = new XMLHttpRequest();
 		if (xhr) {
-			xhr.open("GET", baseUri + prop + "?noCache=" + generateUUID(), false);
-			xhr.send(null);
-			if (xhr.readyState == 4 && xhr.status == 200) {
-				return xhr.responseText;
-			}
+			xhr.open('POST', url, true);
+			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+			xhr.withCredentials = true;
+			xhr.onreadystatechange = callback;
+			xhr.send(data);
 		}
-		return "";
+	}
+	getData(url, callback) {
+		const xhr = new XMLHttpRequest();
+		if (xhr) {
+			xhr.open('GET', url, true);
+			xhr.withCredentials = true;
+			xhr.onload = callback;
+			xhr.send();
+		}
 	}
 
+	// methods for specific properties
 	getTabletState() {
 		var Prop = "TabletState";
 
 		Prop = Prop;
 		return SigWebGetProperty(Prop);
-
 	}
-
 	setTabletState() {
-
+		return this.postData(this._baseUrl, { name: "GetTabletState" })
+			.then(data => console.log(JSON.stringify(data)))
+			.catch(error => console.error(error));
 	}
 }

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace topaz_sigplusnet_webapi_standard
+namespace topaz_sigplusnet_webapi
 {
 	public class RouteConfig
 	{

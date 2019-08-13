@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using topaz_sigplusnet_webapi_standard.Areas.HelpPage.ModelDescriptions;
-using topaz_sigplusnet_webapi_standard.Areas.HelpPage.Models;
+using topaz_sigplusnet_webapi.Areas.HelpPage.ModelDescriptions;
+using topaz_sigplusnet_webapi.Areas.HelpPage.Models;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage
+namespace topaz_sigplusnet_webapi.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

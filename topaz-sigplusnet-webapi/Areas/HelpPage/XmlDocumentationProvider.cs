@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using topaz_sigplusnet_webapi_standard.Areas.HelpPage.ModelDescriptions;
+using topaz_sigplusnet_webapi.Areas.HelpPage.ModelDescriptions;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage
+namespace topaz_sigplusnet_webapi.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

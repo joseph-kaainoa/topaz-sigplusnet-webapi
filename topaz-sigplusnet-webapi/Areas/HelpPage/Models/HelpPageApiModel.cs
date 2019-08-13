@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using topaz_sigplusnet_webapi_standard.Areas.HelpPage.ModelDescriptions;
+using topaz_sigplusnet_webapi.Areas.HelpPage.ModelDescriptions;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage.Models
+namespace topaz_sigplusnet_webapi.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage.ModelDescriptions
+namespace topaz_sigplusnet_webapi.Areas.HelpPage.ModelDescriptions
 {
     public class EnumTypeModelDescription : ModelDescription
     {

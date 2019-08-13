@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage
+namespace topaz_sigplusnet_webapi.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

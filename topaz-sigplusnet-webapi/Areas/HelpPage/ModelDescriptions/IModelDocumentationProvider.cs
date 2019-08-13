@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage.ModelDescriptions
+namespace topaz_sigplusnet_webapi.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

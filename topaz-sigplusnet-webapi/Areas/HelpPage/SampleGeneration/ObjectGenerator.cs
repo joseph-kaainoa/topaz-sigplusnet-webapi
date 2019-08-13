@@ -6,7 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage
+namespace topaz_sigplusnet_webapi.Areas.HelpPage
 {
     /// <summary>
     /// This class will create an object of a given type and populate it with sample data.

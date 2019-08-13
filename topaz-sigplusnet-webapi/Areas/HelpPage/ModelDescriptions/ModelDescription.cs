@@ -1,6 +1,6 @@
 using System;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage.ModelDescriptions
+namespace topaz_sigplusnet_webapi.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

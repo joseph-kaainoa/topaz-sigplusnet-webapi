@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using topaz_sigplusnet_webapi_standard.Areas.HelpPage.ModelDescriptions;
-using topaz_sigplusnet_webapi_standard.Areas.HelpPage.Models;
+using topaz_sigplusnet_webapi.Areas.HelpPage.ModelDescriptions;
+using topaz_sigplusnet_webapi.Areas.HelpPage.Models;
 
-namespace topaz_sigplusnet_webapi_standard.Areas.HelpPage.Controllers
+namespace topaz_sigplusnet_webapi.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.
