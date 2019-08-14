@@ -38,11 +38,19 @@ namespace topaz_sigplusnet_webapi.Controllers
 		// POST: api/SigPlus
 		public void Post([FromBody]string value)
         {
-
+			Console.WriteLine(value);
         }
 
-        // PUT: api/SigPlus/5
-        public void Put(int id, [FromBody]string value)
+		[HttpPost]
+		[Route("PostTabletState")]
+		public IHttpActionResult PostTabletState([FromBody]string value)
+		{
+			Console.WriteLine(value);
+			return Ok(1);
+		}
+
+		// PUT: api/SigPlus/5
+		public void Put(int id, [FromBody]string value)
         {
         }
 
