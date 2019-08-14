@@ -22,7 +22,7 @@
 </div>
 
 <script>
-	document.getElementById('sigStart').addEventListener('click', () => {
+	document.getElementById('sigStart').addEventListener('click', function() {
 		// start capture
 		const sig = new sigPlusNet();
 
@@ -68,7 +68,7 @@
 		document.getElementById("stateText").value = this.responseText;
 	}
 
-	document.getElementById('sigLocalStart').addEventListener('click', () => {
+	document.getElementById('sigLocalStart').addEventListener('click', function () {
 		// start capture
 		//const xhr = new XMLHttpRequest();
 		const url = 'https://localhost:44339/api/SigPlus/GetTabletState';
@@ -76,7 +76,7 @@
 		getData(url, getTabletStateHandler);
 	});
 
-	document.getElementById('sigStateOn').addEventListener('click', () => {
+	document.getElementById('sigStateOn').addEventListener('click', function () {
 		// set tablet mode
 		const url = 'https://localhost:44339/api/SigPlus/PostTabletState';
 		//const data = //{ "test": 12, "test2": "Stuff" };
